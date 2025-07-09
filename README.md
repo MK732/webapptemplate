@@ -4,7 +4,7 @@ A complete NextJS application template with self-hosted Supabase, Docker contain
 
 ## 🚀 Features
 
-- **NextJS 14** with App Router
+- **NextJS 15** with App Router
 - **Self-hosted Supabase** with Docker containers
 - **Authentication** with Supabase Auth
 - **TypeScript** support
@@ -25,7 +25,7 @@ A complete NextJS application template with self-hosted Supabase, Docker contain
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/MK732/webapptemplate
 cd webapp
 ```
 
@@ -37,7 +37,7 @@ docker compose up -d
 ```
 
 This will start:
-- Supabase Studio (Dashboard) at `http://localhost:54323`
+- Supabase Studio (Dashboard) at `http://localhost:8000`
 - API at `http://localhost:54321`
 - Database at `localhost:5432`
 - Auth at `http://localhost:9999`
@@ -212,5 +212,3 @@ cd supabase-project
 This project is licensed under the MIT License.
 
 ---
-
-**Happy coding! 🎉** 
