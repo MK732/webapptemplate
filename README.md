@@ -25,7 +25,7 @@ A complete NextJS application template with self-hosted Supabase, Docker contain
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/MK732/webapptemplate
 cd webapp
 ```
 
