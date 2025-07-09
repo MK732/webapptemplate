@@ -4,7 +4,7 @@ A complete NextJS application template with self-hosted Supabase, Docker contain
 
 ## 🚀 Features
 
-- **NextJS 14** with App Router
+- **NextJS 15** with App Router
 - **Self-hosted Supabase** with Docker containers
 - **Authentication** with Supabase Auth
 - **TypeScript** support
@@ -212,5 +212,3 @@ cd supabase-project
 This project is licensed under the MIT License.
 
 ---
-
-**Happy coding! 🎉** 
