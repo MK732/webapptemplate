@@ -6,6 +6,11 @@
 README.md
 *.md
 
+
+/volumes
+/dev
+
+
 # Docker
 docker-compose*.yml
 Dockerfile*
