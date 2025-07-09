@@ -37,7 +37,7 @@ docker compose up -d
 ```
 
 This will start:
-- Supabase Studio (Dashboard) at `http://localhost:54323`
+- Supabase Studio (Dashboard) at `http://localhost:8000`
 - API at `http://localhost:54321`
 - Database at `localhost:5432`
 - Auth at `http://localhost:9999`
