@@ -3,8 +3,13 @@
 import { createClient } from "@/lib/supabase/client";
 import { useEffect, useState } from "react";
 
+interface TableData {
+  id: number;
+  [key: string]: unknown;
+}
+
 export function TestDataDisplay() {
-  const [data, setData] = useState<any[] | null>(null);
+  const [data, setData] = useState<TableData[] | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [tableInfo, setTableInfo] = useState<string>('');

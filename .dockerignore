@@ -1,0 +1,26 @@
+# Git
+.git
+.gitignore
+
+# Documentation
+README.md
+*.md
+
+# Docker
+docker-compose*.yml
+Dockerfile*
+.dockerignore
+
+# Supabase
+supabase-project/
+
+# Frontend specific (will be copied explicitly)
+frontend/node_modules
+frontend/.next
+frontend/.vercel
+
+# Environment files (except .env which we want to include)
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local 

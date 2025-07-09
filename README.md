@@ -29,22 +29,22 @@ git clone https://github.com/MK732/webapptemplate
 cd webapp
 ```
 
-### 2. Start Supabase Services
+### 2. Start All Services with Docker
 
 ```bash
-cd supabase-project
 docker compose up -d
 ```
 
 This will start:
+- **NextJS Frontend** at `http://localhost:3000`
 - Supabase Studio (Dashboard) at `http://localhost:8000`
 - API at `http://localhost:54321`
 - Database at `localhost:5432`
 - Auth at `http://localhost:9999`
 
-### 3. Configure Environment Variables
+### 3. Environment Variables (Optional for Docker)
 
-Create a `.env.local` file in the `frontend` directory:
+If running with Docker, environment variables are automatically configured. For local development, create a `.env.local` file in the `frontend` directory:
 
 ```env
 NEXT_PUBLIC_SUPABASE_URL=http://localhost:54321
@@ -53,7 +53,9 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key_here
 
 Get your anon key from the Supabase Studio dashboard.
 
-### 4. Install Dependencies and Start Frontend
+### 4. Alternative: Local Development
+
+For local development without Docker:
 
 ```bash
 cd frontend
@@ -135,25 +137,36 @@ export async function GET() {
 
 ## 🐳 Docker Commands
 
-### Start Services
+### Start All Services
 ```bash
-cd supabase-project
 docker compose up -d
 ```
 
-### Stop Services
+### Stop All Services
 ```bash
 docker compose down
 ```
 
 ### View Logs
 ```bash
+# All services
 docker compose logs -f
+
+# Specific service
+docker compose logs -f frontend
+docker compose logs -f studio
 ```
 
 ### Reset Database
 ```bash
+cd supabase-project
 ./reset.sh
+```
+
+### Rebuild Frontend
+```bash
+docker compose build frontend
+docker compose up -d frontend
 ```
 
 ## 🔒 Security
