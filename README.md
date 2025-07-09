@@ -2,6 +2,8 @@
 
 A complete NextJS application template with self-hosted Supabase, Docker containers, and authentication ready to go.
 
+This template is used for NextJS project which need an admin panel, DB and CMS system.
+
 ## 🚀 Features
 
 - **NextJS 15** with App Router
